@@ -1,6 +1,6 @@
 # gcd-subsequence-problem.github.io
 
-##Problem statement
+## Problem statement
 
 "X loved his friend Y very much. Z was jealous of X's friendship. So, he kidnapped Y. X started searching Y and found a note which was written by Z. In that note, Z asked X to solve a problem if he wanted his friend back. The note had the following problem. Given some numbers , X had to find the number of subsequences such that the greatest common divisor of all numbers in subsequence lies between ""L"" and ""R""(both inclusive). Note: A sub-sequence can be obtained from the original sequence by deleting 0 or more integers from the original sequence.
 
