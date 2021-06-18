@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GCD sequence
+        </title>
+        <link rel="stylesheet" href="./style2.css">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="module" src="./chart.mjs"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./animate.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">
+                GCD Subsequence Problem
+            </h1>
+            <!-- <p>Problem description</p> -->
+        </header>
+        
+        <div class="main-container">            
+            <div class="algo-form">
+                <form id="inputsId">
+                    <div class="text-field">
+                        <label class="lableID" for="testId">Test Case:</label><br>
+                        <input type="number" id="testId" name="testcase" 
+                            min="1" max="1000" value = 1>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="checkbox-Class">
+                        <label class="lableID" for="randId">Random Array value genrator</label>
+                        <input type="checkbox" id="randId" class="checkbox" value= True checked>
+                    </div>
+
+                    <br>
+
+                    <div class="text-field">
+                        <label class="lableID" for="sizeId">Size of Random Array</label><br>
+                        <input type="number" id="sizeId" value=5 min="1" max="50">
+                    </div>
+
+                    <br>
+
+                    <div class="text-field">
+                        <label class="lableID" for="arrayId">Enter Array:</label><br>
+                        <input type="text" id="arrayId" name="Size" placeholder="1, 2, 3, 4" disabled>
+                    </div>
+                    <br>
+
+                    <div class="text-field">
+                        <label class="lableID" for="lowerId">Lower Bound of GCD</label><br>
+                        <input type="number" id="lowerId" name="L" min="1" max="100" value=1>
+                    </div>
+                    <br>
+
+                    <div class="text-field">
+                        <label class="lableID" for="upperId">Upper Bound of GCD</label><br>
+                        <input type="number" id="upperId" name="R" min="1" max="100" value=10>
+                    </div>
+                    
+                    <div class="button-class">
+                        <button type="button" id="algoCallerId">Execute</button>
+                    </div>
+
+                </form>             
+            </div>
+        
+            <div id="outputId"  style="display : none;">
+                <div id="chart_div" ></div>
+            </div>
+
+        </div>
+    
+        <script  src="./find_gcd_subsequence.js"></script>
+        <script  type="module" src="./app.js"></script>
+    </body>
+</html>
